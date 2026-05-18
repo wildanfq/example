@@ -1,7 +1,7 @@
 terraform {
   backend "gcs" {
-    bucket  = "belajar-gitops-tfstate-123"
-    prefix  = "terraform/state"
+    bucket = "belajar-gitops-tfstate-123"
+    prefix = "terraform/state"
   }
   required_providers {
     google = {

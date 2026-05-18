@@ -1,5 +1,5 @@
 resource "google_compute_instance" "vm_gitops" {
-  name         = "server-demo-gitops"
+  name         = "server-demo"
   machine_type = "e2-micro"
   zone         = "asia-southeast2-a"
 
@@ -11,7 +11,6 @@ resource "google_compute_instance" "vm_gitops" {
 
   network_interface {
     network = "default"
-    access_config {
-    }
+    access_config {}
   }
 }
